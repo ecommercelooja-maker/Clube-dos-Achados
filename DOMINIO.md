@@ -1,12 +1,12 @@
 # Clube dos Achados — como conectar o domínio
 
-Projeto na Vercel: **clube-dos-achados** (time *ecommercelooja*)
-Domínio: ainda não conectado (endereço da Vercel: veja em Vercel → projeto → *Domains*)
+Projeto na Vercel: **clube** (time *ecommercelooja*)
+Domínio: ainda não conectado (endereço da Vercel: https://clube-gamma.vercel.app)
 Repositório: https://github.com/ecommercelooja-maker/Clube-dos-Achados
 
 ## 1. Adicionar o domínio na Vercel
 
-Pelo painel: Vercel → projeto **clube-dos-achados** → *Settings* → *Domains* → *Add* e adicione os dois:
+Pelo painel: Vercel → projeto **clube** → *Settings* → *Domains* → *Add* e adicione os dois:
 
 - `seudominio.com.br`
 - `www.seudominio.com.br`
@@ -16,8 +16,8 @@ Escolha qual é o principal (recomendado: `www`) e deixe o outro redirecionando 
 Ou pela linha de comando, dentro desta pasta:
 
 ```bash
-vercel domains add seudominio.com.br clube-dos-achados --scope ecommercelooja
-vercel domains add www.seudominio.com.br clube-dos-achados --scope ecommercelooja
+vercel domains add seudominio.com.br clube --scope ecommercelooja
+vercel domains add www.seudominio.com.br clube --scope ecommercelooja
 ```
 
 ## 2. Configurar o DNS (no painel onde o domínio foi comprado: Registro.br, Hostinger, GoDaddy…)

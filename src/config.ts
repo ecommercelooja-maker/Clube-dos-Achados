@@ -5,7 +5,7 @@ export const MARCA = "Clube dos Achados";
 // Endereço oficial do site. Ao conectar o domínio, defina NEXT_PUBLIC_SITE_URL na Vercel
 // (ex.: https://www.clubedosachados.com.br) e faça um novo deploy — canonical, sitemap e
 // prévias de compartilhamento passam a usar o domínio automaticamente.
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://clube-dos-achados.vercel.app").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://clube-gamma.vercel.app").replace(/\/$/, "");
 // Razão social, CNPJ, endereço e e-mail ficam em src/lib/empresa.ts.
 
 // TODO: estes links e o TELEGRAM abaixo vieram do Oferta Certa. Troque pelos grupos do Clube dos Achados.
