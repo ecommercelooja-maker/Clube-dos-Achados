@@ -26,4 +26,4 @@ npm run dev
 
 ## Publicar
 
-Todo push na `main` publica na Vercel automaticamente. Domínio e Google Ads: veja `DOMINIO.md`.
+O site é gerado como arquivos estáticos (pasta `out/`, configuração no `vercel.json`). Todo push na `main` publica na Vercel automaticamente. Domínio e Google Ads: veja `DOMINIO.md`.

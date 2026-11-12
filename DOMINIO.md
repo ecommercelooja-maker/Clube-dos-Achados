@@ -4,6 +4,12 @@ Projeto na Vercel: **clube** (time *ecommercelooja*)
 Domínio: ainda não conectado (endereço da Vercel: https://clube-gamma.vercel.app)
 Repositório: https://github.com/ecommercelooja-maker/Clube-dos-Achados
 
+## Como o site é publicado
+
+O site é exportado como **arquivos estáticos** (`next build` gera a pasta `out/`). A configuração de
+publicação fica no `vercel.json` (comando de build, pasta `out`, URLs sem `.html`, cabeçalhos e o
+redirecionamento dos links antigos `/g/...`), então não depende do *Framework Preset* do painel.
+
 ## 1. Adicionar o domínio na Vercel
 
 Pelo painel: Vercel → projeto **clube** → *Settings* → *Domains* → *Add* e adicione os dois:
