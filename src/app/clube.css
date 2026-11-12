@@ -1,0 +1,78 @@
+/* =====================================================================
+   Identidade do Clube dos Achados
+   Carregado por último: ajusta tipografia e detalhes herdados do layout base.
+   Cores: roxo + rosa + dourado (variáveis em globals.css).
+   Títulos: Bricolage Grotesque 800, sem caixa alta, mais arredondados.
+   ===================================================================== */
+
+/* Títulos: de caixa alta condensada para minúsculas encorpadas */
+.hero h1,
+.secao-titulo,
+.numero b,
+.entrega-txt h3,
+.fechamento h2,
+.legal h1,
+.cinema-texto,
+.texto-rolagem,
+.rodape-cta b,
+.rodape-marca,
+.rodape-gigante,
+.topbar-marca {
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: -.025em;
+}
+
+.topbar-marca { font-size: 21px; gap: 8px; }
+.topbar-marca em { margin-left: 5px; color: var(--roxo-vivo); }
+
+.hero h1 { font-size: clamp(36px, 8.6vw, 52px); line-height: 1.04; text-shadow: none; }
+@media (min-width: 960px) { .hero h1 { font-size: clamp(48px, 4.6vw, 64px); } }
+.destaque-off {
+  background: linear-gradient(100deg, var(--ouro), #ffb020);
+  border-radius: .22em; padding: 0 .22em .04em; transform: rotate(-1.5deg);
+  box-shadow: 0 5px 0 #c27c00;
+}
+
+.secao-titulo { font-size: clamp(28px, 5.2vw, 42px); line-height: 1.08; max-width: 24ch; }
+.split-texto .secao-titulo { font-size: clamp(27px, 4vw, 38px); }
+.numero b { font-size: clamp(26px, 5.2vw, 36px); }
+.entrega-txt h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.15; }
+.fechamento h2 { font-size: clamp(34px, 7.6vw, 62px); line-height: 1.04; text-shadow: none; }
+.legal h1 { font-size: clamp(28px, 6vw, 38px); }
+.cinema-texto { font-size: clamp(34px, 7vw, 92px); line-height: 1.02; }
+.texto-rolagem { font-size: clamp(26px, 4.8vw, 54px); line-height: 1.15; }
+.rodape-cta b { font-size: clamp(20px, 2.6vw, 26px); }
+.rodape-marca { font-size: 24px; }
+
+/* Nome gigante do rodapé: mais longo que o original, então um pouco menor */
+.rodape-gigante { font-size: clamp(40px, 10.4vw, 168px); letter-spacing: -.04em; }
+
+/* Sobretítulos viram "pílulas" */
+.sobretitulo {
+  width: fit-content; margin-inline: auto; padding: 5px 14px; border-radius: 999px;
+  background: rgba(139, 92, 246, .1); color: var(--roxo); letter-spacing: .1em; font-size: 12px;
+}
+.sobretitulo.esquerda { margin-left: 0; }
+.sobretitulo.claro { background: rgba(244, 114, 182, .14); color: #fbcfe8; }
+@media (max-width: 879px) { .split-texto .sobretitulo { margin-inline: auto; } }
+
+/* Cards mais arredondados, com borda que acende no roxo */
+.exemplo, .tipo, .passo, .numero { border-radius: 26px; }
+.exemplo:hover, .tipo:hover { border-color: var(--roxo-vivo); }
+.exemplo-nicho { background: rgba(139, 92, 246, .12); color: var(--roxo); border-radius: 999px; padding: 3px 10px; }
+
+/* Hero: foto com moldura dourada e leve inclinação */
+.hero-foto { border: 4px solid rgba(255, 201, 51, .9); border-radius: 36px; transform: rotate(1.5deg); }
+
+/* Tique do compromisso e destaques no tom da marca */
+.porque-n { background: linear-gradient(145deg, var(--rosa), var(--roxo)); box-shadow: 0 6px 12px rgba(109, 40, 217, .3); }
+.split-foto::before { background: linear-gradient(135deg, var(--roxo-vivo), var(--rosa), var(--ouro)); }
+
+/* Celular: nome da marca numa linha só */
+.topbar-marca { white-space: nowrap; }
+@media (max-width: 420px) {
+  .topbar-marca { font-size: 17px; gap: 6px; }
+  .topbar-icone { width: 28px; height: 28px; }
+  .topbar-btn { font-size: 13px; padding: 8px 14px; }
+}
